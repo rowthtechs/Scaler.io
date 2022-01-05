@@ -8,11 +8,11 @@ import com.mmp.android.mpmetrics.MmpAPI;
 
 public class MainActivity extends AppCompatActivity {
 
+    MmpAPI MmpApi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MmpAPI mmpAPI ;
     }
 }
