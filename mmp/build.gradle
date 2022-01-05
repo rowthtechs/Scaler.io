@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.library'
+    id 'maven-publish'
 //    id 'com.github.dcendents.android-maven'
 }
 
@@ -49,4 +50,19 @@ dependencies {
     androidTestImplementation "org.mockito:mockito-android:2.25.1"
     androidTestUtil 'androidx.test:orchestrator:1.4.0'
     testImplementation "org.mockito:mockito-core:2.25.1"
+}
+
+afterEvaluate {
+    publishing{
+        publications{
+            maven(MavenPublication) {
+//                from components.java
+                groupId = 'com.mmp.android'
+                artifactId = 'scaler_library'
+                version = '1.1'
+
+
+            }
+        }
+    }
 }
