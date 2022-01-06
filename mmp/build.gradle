@@ -55,10 +55,10 @@ dependencies {
 afterEvaluate {
     publishing{
         publications{
-            maven(MavenPublication) {
-//                from components.java
-                groupId = 'com.mmp.android'
-                artifactId = 'scaler_library'
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.mmp'
+                artifactId = 'android'
                 version = '0.1.1'
 
 
